@@ -12,9 +12,12 @@
 		C35A0FA422B0AB330067402F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35A0FA222B0AB330067402F /* Main.storyboard */; };
 		C35A0FA622B0AB370067402F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35A0FA522B0AB370067402F /* Assets.xcassets */; };
 		C35A0FA922B0AB370067402F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35A0FA722B0AB370067402F /* LaunchScreen.storyboard */; };
+		F915AC94F146B456C4A8A38C /* Pods_ChrisPelis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C7DE601752F359BC0E0D6E /* Pods_ChrisPelis.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C7DE601752F359BC0E0D6E /* Pods_ChrisPelis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChrisPelis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3030E809BFF9162C56D303B5 /* Pods-ChrisPelis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChrisPelis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChrisPelis/Pods-ChrisPelis.debug.xcconfig"; sourceTree = "<group>"; };
 		C35A0F9B22B0AB330067402F /* ChrisPelis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChrisPelis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35A0F9E22B0AB330067402F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35A0FA022B0AB330067402F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C35A0FA522B0AB370067402F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C35A0FA822B0AB370067402F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C35A0FAA22B0AB370067402F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4961FF41B12C90D6F803581 /* Pods-ChrisPelis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChrisPelis.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChrisPelis/Pods-ChrisPelis.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F915AC94F146B456C4A8A38C /* Pods_ChrisPelis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30637E4985C2AEB1B3A3450E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C7DE601752F359BC0E0D6E /* Pods_ChrisPelis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8065BC5745BE98E08A864DDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3030E809BFF9162C56D303B5 /* Pods-ChrisPelis.debug.xcconfig */,
+				C4961FF41B12C90D6F803581 /* Pods-ChrisPelis.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C35A0F9222B0AB330067402F = {
 			isa = PBXGroup;
 			children = (
 				C35A0F9D22B0AB330067402F /* ChrisPelis */,
 				C35A0F9C22B0AB330067402F /* Products */,
+				8065BC5745BE98E08A864DDA /* Pods */,
+				30637E4985C2AEB1B3A3450E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C35A0FAD22B0AB370067402F /* Build configuration list for PBXNativeTarget "ChrisPelis" */;
 			buildPhases = (
+				AA46ABF9CAAB6DD5586E2C88 /* [CP] Check Pods Manifest.lock */,
 				C35A0F9722B0AB330067402F /* Sources */,
 				C35A0F9822B0AB330067402F /* Frameworks */,
 				C35A0F9922B0AB330067402F /* Resources */,
+				E8A1DD517108C464682D8E37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA46ABF9CAAB6DD5586E2C88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChrisPelis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8A1DD517108C464682D8E37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChrisPelis/Pods-ChrisPelis-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Typhoon/Typhoon.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Typhoon.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChrisPelis/Pods-ChrisPelis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C35A0F9722B0AB330067402F /* Sources */ = {
@@ -280,6 +359,7 @@
 		};
 		C35A0FAE22B0AB370067402F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3030E809BFF9162C56D303B5 /* Pods-ChrisPelis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +378,7 @@
 		};
 		C35A0FAF22B0AB370067402F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4961FF41B12C90D6F803581 /* Pods-ChrisPelis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

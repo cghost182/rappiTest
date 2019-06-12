@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (4.8.0)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Moya/ReactiveSwift (12.0.1):
+    - Moya/Core
+    - ReactiveSwift (~> 4.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Realm (3.13.0):
+    - Realm/Headers (= 3.13.0)
+  - Realm/Headers (3.13.0)
+  - RealmSwift (3.13.0):
+    - Realm (= 3.13.0)
+  - Result (4.0.0)
+  - SwiftyJSON (4.2.0)
+  - Typhoon (4.0.7):
+    - Typhoon/DeallocNotifier (= 4.0.7)
+    - Typhoon/IntrospectionUtils (= 4.0.7)
+    - Typhoon/no-arc (= 4.0.7)
+  - Typhoon/DeallocNotifier (4.0.7)
+  - Typhoon/IntrospectionUtils (4.0.7)
+  - Typhoon/no-arc (4.0.7):
+    - Typhoon/IntrospectionUtils
+
+DEPENDENCIES:
+  - Alamofire
+  - Moya/ReactiveSwift
+  - RealmSwift
+  - SwiftyJSON
+  - Typhoon (~> 4.0.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Moya
+    - ReactiveSwift
+    - Realm
+    - RealmSwift
+    - Result
+    - SwiftyJSON
+    - Typhoon
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Realm: 5edd2ee65406aef591a4f9895de5a3440e51b3d8
+  RealmSwift: be5ebc7930e37cd3376b41cec7f21984528aaa16
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Typhoon: f89030797a7c8a23ee85aa7c7dbdfd2e5d8a8471
+
+PODFILE CHECKSUM: dddd52bf3b195a71a8f250abd0859c19ab9341b9
+
+COCOAPODS: 1.5.2
