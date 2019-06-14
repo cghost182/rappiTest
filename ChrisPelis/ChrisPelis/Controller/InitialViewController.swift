@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Moya
 
 class InitialViewController: UIViewController {
 
@@ -20,6 +21,25 @@ class InitialViewController: UIViewController {
 
     @IBAction func testAction(_ sender: Any) {
         self.navigationController?.pushViewController(self.moviesVC, animated: true)
+        dataServiceAPI.request(.getPopularMovies(page: String(1))) { result in
+            switch result {
+            case let .success(moyaResponse):
+                
+                do {
+                    try moyaResponse.filterSuccessfulStatusCodes()
+                    let data = try moyaResponse.mapJSON()
+                    let statusCode = moyaResponse.statusCode // Int - 200, 401, 500, etc
+                    
+                    print(data)
+                }
+                catch {
+                    print("error")
+                }
+                
+            case let .failure(error):
+                print("error")
+            }
+        }
     }
     
 }
